@@ -37,7 +37,7 @@
     box2.position.set(1,0,-5);
     scene.add(box1);
     scene.add(box2);
-    
+
      //ドーナッツ
     /*var torusGeometry = new THREE.TorusGeometry( 3.3, 1.5, 24, 24 ); 
     var torusMaterial = new THREE. MeshToonMaterial( { color: 0xd66b00 } );
@@ -66,10 +66,10 @@
       requestAnimationFrame(update);
   
       // 箱を回転させる
-      /*box1.rotation.x += 0.01;
+      box1.rotation.x += 0.01;
       box1.rotation.y += 0.01;
       box2.rotation.x += 0.01;
-      box2.rotation.y += 0.01;*/
+      box2.rotation.y += 0.01;
   
       renderer.render(scene, camera);
     };
