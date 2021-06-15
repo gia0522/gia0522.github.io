@@ -83,11 +83,17 @@
         sprite2.scale.set(100,100,100);
         scene.add(sprite2);*/
 
-        //テクスチャー読み込み
-        var textureLoader = new THREE.TextureLoader();  
-        var texture = textureLoader.load("img/earth.png");
-        var mat = new THREE.MeshPhongMaterial();
-        mat.map = texture;
+        //6面分のテクスチャー読み込み
+        var materials = [
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/juntu.png")}),
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
+  ];
+ 
+        var material = new THREE.MeshFaceMaterial(materials); // マテリアルをセット
 
         // 箱を作成
         var geometry1 = new THREE.BoxGeometry(100, 50, 50);
