@@ -50,7 +50,7 @@
       scene.add(axisHelper);
 
         // タンヤオをスプライトで作成
-        var textureLoader = new THREE.TextureLoader();  
+        /*var textureLoader = new THREE.TextureLoader();  
         var texture0 = textureLoader.load("img/tannyao.png");
         const material0 = new THREE.SpriteMaterial({ map: texture0,});
 
@@ -59,7 +59,7 @@
         sprite0.position.y = 50;
         sprite0.position.z = 0;
         sprite0.scale.set(500,100,100);
-        scene.add(sprite0);
+        scene.add(sprite0);:/
 
         // 木1をスプライトで作成 
         /*var texture1 = textureLoader.load("img/tree1.png");
@@ -84,16 +84,16 @@
         scene.add(sprite2);*/
 
         //テクスチャー読み込み
-        /*var textureLoader = new THREE.TextureLoader();  
+        var textureLoader = new THREE.TextureLoader();  
         var texture = textureLoader.load("img/earth.png");
         var mat = new THREE.MeshPhongMaterial();
         mat.map = texture;
 
         // 箱を作成
-        var geometry1 = new THREE.BoxGeometry(100, 100, 100);
+        var geometry1 = new THREE.BoxGeometry(100, 50, 50);
         var box = new THREE.Mesh(geometry1, mat);
         box.position.set(1.5,0,-5);
-        scene.add(box);*/
+        scene.add(box);
 
         tick();
         // 毎フレーム時に実行されるループイベントです
