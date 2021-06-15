@@ -110,9 +110,9 @@
         var box1 = new THREE.Mesh(geometry, material);
         var box2 = new THREE.Mesh(geometry, material);
         var box3 = new THREE.Mesh(geometry, material);
-        box1.position.set(-400,25,50);
-        box2.position.set(-300,25,50);
-        box3.position.set(-200,25,50);
+        box1.position.set(-200,25,50);
+        box2.position.set(-100,25,50);
+        box3.position.set(0,25,50);
         scene.add(box1);
         scene.add(box2);
         scene.add(box3);
@@ -132,7 +132,7 @@
         // 箱を作成
         var geometry = new THREE.BoxGeometry(100, 50, 50);
         var box4 = new THREE.Mesh(geometry, material);
-        box4.position.set(-67,25,50);
+        box4.position.set(100,25,50);
         scene.add(box4);
 
         //6面分のテクスチャー読み込み
@@ -150,7 +150,7 @@
         // 箱を作成
         var geometry = new THREE.BoxGeometry(34, 50, 50);
         var box5 = new THREE.Mesh(geometry, material);
-        box5.position.set(0,25,50);
+        box5.position.set(167,25,50);
         scene.add(box5);
 
         tick();
