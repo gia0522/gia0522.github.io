@@ -67,8 +67,8 @@
         const sprite0 = new THREE.Sprite(material0);
         sprite0.position.x = 0;
         sprite0.position.y = 100;
-        sprite0.position.z = 0;
-        sprite0.scale.set(500,200,100);
+        sprite0.position.z = -20;
+        sprite0.scale.set(600,300,100);
         scene.add(sprite0);
 
         // 木1をスプライトで作成 
@@ -150,8 +150,11 @@
         // 箱を作成
         var geometry = new THREE.BoxGeometry(34, 50, 50);
         var box5 = new THREE.Mesh(geometry, material);
+        var box6 = new THREE.Mesh(geometry, material);
         box5.position.set(167,25,50);
+        box6.position.set(194,25,50);
         scene.add(box5);
+        scene.add(box6);
 
         tick();
         // 毎フレーム時に実行されるループイベントです
