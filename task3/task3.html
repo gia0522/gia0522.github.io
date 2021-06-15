@@ -60,7 +60,7 @@
       scene.add(axisHelper);
 
         // タンヤオをスプライトで作成
-        /*var textureLoader = new THREE.TextureLoader();  
+        var textureLoader = new THREE.TextureLoader();  
         var texture0 = textureLoader.load("img/tannyao.png");
         const material0 = new THREE.SpriteMaterial({ map: texture0,});
 
@@ -69,7 +69,7 @@
         sprite0.position.y = 100;
         sprite0.position.z = 0;
         sprite0.scale.set(500,200,100);
-        scene.add(sprite0);:/
+        scene.add(sprite0);
 
         // 木1をスプライトで作成 
         /*var texture1 = textureLoader.load("img/tree1.png");
@@ -132,7 +132,7 @@
         // 箱を作成
         var geometry = new THREE.BoxGeometry(100, 50, 50);
         var box4 = new THREE.Mesh(geometry, material);
-        box4.position.set(-60,25,50);
+        box4.position.set(-67,25,50);
         scene.add(box4);
 
         //6面分のテクスチャー読み込み
@@ -148,7 +148,7 @@
         var material = new THREE.MeshFaceMaterial(materials); // マテリアルをセット
 
         // 箱を作成
-        var geometry = new THREE.BoxGeometry(33, 50, 50);
+        var geometry = new THREE.BoxGeometry(34, 50, 50);
         var box5 = new THREE.Mesh(geometry, material);
         box5.position.set(0,25,50);
         scene.add(box5);
