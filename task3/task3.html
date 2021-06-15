@@ -141,7 +141,7 @@
         new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
         new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
         new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
-        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/goman.png")}),
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/gomann.png")}),
         new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
   ];
  
@@ -150,7 +150,7 @@
         // 箱を作成
         var geometry = new THREE.BoxGeometry(33, 50, 50);
         var box5 = new THREE.Mesh(geometry, material);
-        box5.position.set(-50,25,50);
+        box5.position.set(0,25,50);
         scene.add(box5);
 
         tick();
