@@ -44,7 +44,14 @@
   var geometry = new THREE.BoxGeometry(1, 1, 1);
   var box = new THREE.Mesh(geometry, material);
   box.position.z = -5;
+  box.position.x = -5;
   scene.add(box);
+
+  var geometry = new THREE.BoxGeometry(1, 1, 1);
+  var box2 = new THREE.Mesh(geometry, material);
+  box.position.z = -5;
+  box.position.x = 5;
+  scene.add(box2);
 
   // 平行光源
   var directionalLight1 = new THREE.DirectionalLight(0xffffff);
