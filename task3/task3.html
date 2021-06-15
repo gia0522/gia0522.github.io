@@ -117,6 +117,24 @@
         scene.add(box2);
         scene.add(box3);
 
+        //6面分のテクスチャー読み込み
+        var materials = [
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/kantu.png")}),
+        new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/uramenn.png")}),
+  ];
+ 
+        var material = new THREE.MeshFaceMaterial(materials); // マテリアルをセット
+
+        // 箱を作成
+        var geometry = new THREE.BoxGeometry(100, 50, 50);
+        var box4 = new THREE.Mesh(geometry, material);
+        box4.position.set(-100,25,50);
+        scene.add(box4);
+
         tick();
         // 毎フレーム時に実行されるループイベントです
         function tick() {
